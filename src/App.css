@@ -1,38 +1,347 @@
-.App {
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.grey{
+  color: #918E9B;
+}
+
+/* Hero.css */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar CSS */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: none !important; 
+  transition: background 0.3s ease-in;
+}
+
+.navbar-brand {
+  font-family: monospace;
+  color: forestgreen;
+}
+
+.nav-link {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
   text-align: center;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Reservations {
+  background-color: forestgreen;
+  border-radius: 10px;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* end of nav */
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5); /* Darken the background image */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-overlay {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-header {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.hero-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-input {
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: forestgreen; 
+  border: none;
+  border-radius: 5px;
   color: white;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-button:hover {
+  background-color: darkgreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section, .fade-section{
+  padding: 30px;
+  margin-top: 60px;
+}
+
+.pack-head{
+  color: forestgreen;
+  font-weight: 600;
+}
+
+.card {
+  width: 250px;
+  font-size: 12px;
+  display: flex;         
+  flex: 0 0 auto ;        
+  flex-direction: column; 
+  position: relative;
+  border: none;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 60px;
+  overflow-x: auto;
+  justify-content:space-around;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+
+.card-img{
+  width: 100%;
+  /* height: 50%; */
+}
+
+.card-stats{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  
+}
+
+.card-star{
+  height: 14px;
+  padding-right: 5px;
+}
+
+.rating{
+  padding-right: 5px;
+}
+
+.card-location{
+  margin-right: 10px;
+}
+
+.card-title{
+  text-wrap: nowrap;
+  font-weight: 600;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+/* Form Container */
+.book-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+.book-form-header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: forestgreen;
+  text-align: center;
+}
+
+/* Form Elements */
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.book-form-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.book-form-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: forestgreen;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-form-button:hover {
+  background-color: #228b22;
+}
+
+.formImg{
+  display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* Footer Container */
+.footer {
+  background-color: forestgreen;
+  color: white;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+}
+
+/* Footer Content Wrapper */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 2rem;
+
+}
+
+/* Footer Headers */
+.footer-header {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+/* Footer Links */
+.footer-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Footer Social Icons */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Footer Copyright */
+.footer-copyright {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
   }
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+  .hero-form {
+    flex-direction: row;
+  }
+
+  .hero-input {
+    margin: 5px 10px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero-button {
+    margin-top: 0;
+  }
+}
+
+/* Initial state - element is not visible */
+.fade-section {
+  opacity: 0;
+  transform: translateX(-100px); /* Slide in from the left */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Adjust duration as needed */
+}
+
+/* When element is visible */
+.fade-section.visible {
+  opacity: 1;
+  transform: translateX(0);
 }

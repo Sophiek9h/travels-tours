@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import BookingForm from './components/bookingForm';
+import Footer from './components/footer';
+import Hero from './components/hero';
+import PackageSection from "./components/package-section"
+
+
 
 function App() {
+
+  // state for search filter
+  const [searchCriteria, setSearchCriteria] = useState({ location: '', priceRange: '' });
+
+  const handleSearch = (location, priceRange) => {
+      setSearchCriteria({ location, priceRange });
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero onSearch={handleSearch}/>
+      <PackageSection searchCriteria={searchCriteria} />
+      <BookingForm/>
+      <Footer/>
     </div>
   );
 }
