@@ -18,6 +18,7 @@ Responsive design
 
 
 -Installation-
+
 To get started with this project, follow these steps:
 
 1) Clone the repository:
@@ -36,6 +37,7 @@ To get started with this project, follow these steps:
 
 
 -Usage-
+
 1) Search for Packages:
 Enter the dream location and price range in the search inputs and click the "Search" button.
 
@@ -49,18 +51,23 @@ Use the "Cancel Reservation" button to delete the reservation, or the "Next: Pay
 
 
 -Components-
-Navigation
+
+Navigation:
 Displays the navigation bar with links.
 Shows the reservation modal with details fetched from local storage.
-BookingForm
+
+BookingForm:
 Displays the form for booking a package.
 Handles form submission and saves data to local storage.
-PackageSection
+
+PackageSection:
 Displays the list of available packages.
 Implements a scroll animation effect.
-Hero
+
+Hero:
 Displays the hero section with an image, title, and search form.
-Local Storage
+
+Local Storage:
 The reservation details are stored in the browser's local storage. When a user submits the booking form, the data is saved to local storage and retrieved to display in the reservation modal.
 
 
