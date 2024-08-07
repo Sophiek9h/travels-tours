@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+        -Travels & Tours-
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Travels & Tours is a web application for booking travel packages. Users can search for packages based on dream locations and price range, book a package, and view their reservation details in a modal. This project uses React and React Bootstrap for the frontend.
 
-## Available Scripts
 
-In the project directory, you can run:
+        -Table of Contents-
+Features
+Installation
+Usage
+Components
+Local Storage
+Features
+Search for travel packages by location and price range
+Book a travel package through a form
+View reservation details in a modal
+Cancel reservation functionality
+Responsive design
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        -Installation-
+To get started with this project, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1) Clone the repository:
 
-### `npm test`
+git clone https://github.com/your-username/travels-tours.git
+cd travels-tours
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2) Install dependencies:
 
-### `npm run build`
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3) Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start
+The application will be available at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+        -Usage-
+1) Search for Packages:
+Enter the dream location and price range in the search inputs and click the "Search" button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2) Book a Package:
+Fill in the booking form with your name, email, package name, and date.
+Click the "Book Now" button to submit the form.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3) View Reservation:
+Click the "Reservations" link in the navigation bar to open the modal and view your reservation details.
+Use the "Cancel Reservation" button to delete the reservation, or the "Next: Pay" button (which does not lead anywhere currently).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+        -Components-
+Navigation
+Displays the navigation bar with links.
+Shows the reservation modal with details fetched from local storage.
+BookingForm
+Displays the form for booking a package.
+Handles form submission and saves data to local storage.
+PackageSection
+Displays the list of available packages.
+Implements a scroll animation effect.
+Hero
+Displays the hero section with an image, title, and search form.
+Local Storage
+The reservation details are stored in the browser's local storage. When a user submits the booking form, the data is saved to local storage and retrieved to display in the reservation modal.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*Contributions are welcome! Please follow these steps to contribute:*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fork the repository.
+Create a new branch for your feature or bugfix.
+Make your changes and commit them with descriptive messages.
+Push your changes to your forked repository.
+Open a pull request to the main repository.

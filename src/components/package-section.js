@@ -61,8 +61,12 @@ export default function PackageSection({ searchCriteria }) {
         setFilteredData(filtered);
     }, [searchCriteria]);
 
+    // mapping through the data file to fetch package details
     const pack = filteredData.map(item => (
-        <Pack key={item.id} item={item} />
+        <Pack
+         key={item.id} 
+        item={item} 
+        />
     ));
 
     return (

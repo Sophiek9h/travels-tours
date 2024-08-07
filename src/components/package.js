@@ -3,6 +3,7 @@ import star from "../images/Star.png"
 
 export default function Pack(props) {
     return (
+        // card element
         <div className="card">
             <img src={props.item.image} alt="" className="card-img" />
             <div className="card-stats">

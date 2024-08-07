@@ -3,6 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
     return (
+        // entire footer section
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-section">

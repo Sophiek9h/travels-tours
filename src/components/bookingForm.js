@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import formImg from "../images/formImg.png";
 
 export default function BookingForm() {
+    // state for storing and recieving form details
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -12,6 +13,7 @@ export default function BookingForm() {
         date: ''
     });
 
+    
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -25,8 +27,9 @@ export default function BookingForm() {
         localStorage.setItem('reservationDetails', JSON.stringify(formData));
         
     };
-    
+
     return (
+        // form for booking a package
         <Container className='section'>
             <Row>
                 <Col>

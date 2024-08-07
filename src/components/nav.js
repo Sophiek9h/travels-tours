@@ -9,6 +9,7 @@ function Navigation() {
   const [show, setShow] = useState(false);
   const [reservationDetails, setReservationDetails] = useState(null);
 
+  // to fetch and show reservation details
   useEffect(() => {
     const storedDetails = localStorage.getItem('reservationDetails');
     if (storedDetails) {
@@ -16,6 +17,7 @@ function Navigation() {
     }
   }, [show]);
 
+  // to handle closing and showing modal
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -27,6 +29,7 @@ function Navigation() {
 
   return (
     <>
+    {/* navigation bar */}
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">Travels & Tours</Navbar.Brand>
