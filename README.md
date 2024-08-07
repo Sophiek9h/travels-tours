@@ -3,20 +3,6 @@
 Travels & Tours is a web application for booking travel packages. Users can search for packages based on dream locations and price range, book a package, and view their reservation details in a modal. This project uses React and React Bootstrap for the frontend.
 
 
--Table of Contents-
-Features
-Installation
-Usage
-Components
-Local Storage
-Features
-Search for travel packages by location and price range
-Book a travel package through a form
-View reservation details in a modal
-Cancel reservation functionality
-Responsive design
-
-
 -Installation-
 
 To get started with this project, follow these steps:
