@@ -1,9 +1,9 @@
--Travels & Tours-
+#Travels & Tours
 
 Travels & Tours is a web application for booking travel packages. Users can search for packages based on dream locations and price range, book a package, and view their reservation details in a modal. This project uses React and React Bootstrap for the frontend.
 
 
--Installation-
+##Installation
 
 To get started with this project, follow these steps:
 
@@ -22,7 +22,7 @@ To get started with this project, follow these steps:
         The application will be available at http://localhost:3000.
 
 
--Usage-
+##Usage
 
 1) Search for Packages:
 Enter the dream location and price range in the search inputs and click the "Search" button.
@@ -36,31 +36,31 @@ Click the "Reservations" link in the navigation bar to open the modal and view y
 Use the "Cancel Reservation" button to delete the reservation, or the "Next: Pay" button (which does not lead anywhere currently).
 
 
--Components-
+##Components
 
-Navigation:
+- Navigation:
 Displays the navigation bar with links.
 Shows the reservation modal with details fetched from local storage.
 
-BookingForm:
+- BookingForm:
 Displays the form for booking a package.
 Handles form submission and saves data to local storage.
 
-PackageSection:
+- PackageSection:
 Displays the list of available packages.
 Implements a scroll animation effect.
 
-Hero:
+- Hero:
 Displays the hero section with an image, title, and search form.
 
-Local Storage:
+- Local Storage:
 The reservation details are stored in the browser's local storage. When a user submits the booking form, the data is saved to local storage and retrieved to display in the reservation modal.
 
 
 *Contributions are welcome! Please follow these steps to contribute:*
 
-Fork the repository.
-Create a new branch for your feature or bugfix.
-Make your changes and commit them with descriptive messages.
-Push your changes to your forked repository.
-Open a pull request to the main repository.
+- Fork the repository.
+- Create a new branch for your feature or bugfix.
+- Make your changes and commit them with descriptive messages.
+- Push your changes to your forked repository.
+- Open a pull request to the main repository.
