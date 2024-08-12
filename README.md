@@ -9,7 +9,7 @@ To get started with this project, follow these steps:
 
 1) Clone the repository:
 
-        git clone https://github.com/your-username/travels-tours.git
+        git clone https://github.com/Sophiek9h/travels-tours.git
         cd travels-tours
 
 2) Install dependencies:
